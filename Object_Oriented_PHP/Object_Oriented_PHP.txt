@@ -1,0 +1,108 @@
+Object-Oriented Programming
+	- At a glance, object-oriented programming can appear to be far more complex than simple procedural, or inline, code. However, this doesn’t have to be the case. Because object-oriented programing is similar to the way human beings perceive the real world, using the object-oriented approach, can help you visualize the solution to a problem more easily. Object-oriented programming, or OOP for short, is a style of coding that allows developers to group similar tasks into containers. In PHP, containers are defined using classes. A class contains all the functions and variables that describe an object.
+
+Why Object-Oriented Programming?
+	- Object-oriented programming, or OOP for short, is a style of coding that allows developers to group similar tasks into containers. In PHP, containers are defined using classes. A class contains all the functions and variables that describe an object.
+
+Why Use Object-Oriented Programming?
+--Clarification
+	1. A programming paradigm is a style, or “way”, of approaching a problem to come up with a solution. The two main paradigms in PHP are procedural and object-oriented.
+
+	2. No one programming paradigm solves every programming problems, but the more you know about different paradigms, the better prepared you’ll be to choose the right tool for the job, and write cleaner and more organized code.
+
+	3. Bad / “spaghetti code” that weaves all over your application and is complicated to follow, can be written in any paradigm, including OOP.
+
+--Tenets of Object-Oriented Programming
+	1. The DRY principal or Don’t Repeat Yourself. When you repeat the same code in multiple locations, updating becomes a nightmare. Maximize reusability, minimize repeating code.
+
+	2. The KISS principle: Keep It Simple Stupid. Don't use fancy OOP features just because you can. Use fancy OOP features because they have specific, demonstrable benefits to the problem you're trying to solve.
+
+The Why
+1. Sooner rather than later, you’ll have to work with object-oriented code.
+2. Modularity
+3. Scalability
+4. Frameworks
+5. Contributing to open source software.
+6. Gives you various ways to think and solve problems.
+7. More easily translate your programming skills into other Object-Oriented languages.
+8. Become a more valuable developer.
+----------------------------------------------------------------------------------------------
+Classes and Objects
+	- In order to create a class, we group the code that handles a certain topic into one place. For example, we can group all of the code that handles the creation of recipes in a cookbook into one class. In order to interact with a class, we need to create an object from that class.
+
+Declaring a Class
+	- We declare a class using the “class” keyword, followed by the name of the class and a set of curly braces. Although PHP doesn't really care about spacing, the standard is to start the curly braces on the next line down. Although class names are NOT case sensitive, changing case within your program can get extremely confusing.
+	class Book
+	{
+	}
+
+StudlyCaps
+	- The standard for naming classes is StudlyCaps, which means the first letter should be capitalized, as well as the first letter of any subsequent word, all other letters should be lower case. For example: in a class named “MyRecipe”, the M and the R would be capitalized and the other letters would be lower case.
+
+Instantiating an Object
+	- After creating the class, a new object can be instantiated and stored in a variable using the “new” keyword:
+	$book1 = new Book();
+
+Adding Properties
+	- We call the variables inside a class, properties. Properties can accept values like strings, integers, and booleans (true/false values), like any other variable. We demonstrate how to use properties by adding an array for the recipe ingredients.
+
+Properties
+	- Variables within a class are called properties.
+
+camelCase
+	- The naming convention for properties is camelCase, like a camel, the “humps” are in the middle. The name starts with a lowercase letter, and all other words, start with a capital letter. For example, $ingredients or $dryIngredients.
+
+Access Modifiers
+
+PHP Docs
+	-Access modifiers allows us to control the access, or visibility, of our properties. These access modifiers are public, private, or protected. If declared using var, the property will be defined as public. When declaring a property, the visibility MUST be defined by an access modifier.
+
+	* Public: Publicly accessible from anywhere, even from outside the scope of the class.
+
+	* Private: Accessed within the class itself. It protects properties and methods from being accessed from outside the class.
+
+	* Protected: Same as private, except by allowing child (sub) classes to access protected parent (super) properties and methods.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
